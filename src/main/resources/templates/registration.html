@@ -7,14 +7,19 @@
 </head>
 <body>
 <h1>Registration page</h1>
+<hr>
+<div class="register-container">
 <form th:action="@{/registration}" method="post"/>
-<label for="username">Email</label>
-<input type="text" id="username" name="username"/></br>
-<label for="password">Password</label>
-<input type="password" id="password" name="password"/></br>
-<input type="submit" value="register me"/>
+<label for="username">Email:</label>
+<input type="text" placeholder="Enter Email" id="username" name="username"/></br>
+<label for="password">Password:</label>
+<input type="password" placeholder="Enter Password" id="password" name="password"/></br>
+</br>
+<input  class="registerBtn" type="submit" value="REGISTER ME"/>
 </form>
-<p>or </p>
-<button type="button" class="button1" th:onclick="|window.location.href='/login'|">GO TO LOGIN</button>
+</div>
+<div class="sing-in-container">
+<button type="button" class="sing-button" th:onclick="|window.location.href='/login'|">GO TO LOGIN</button>
+</div>
 </body>
 </html>

@@ -1,12 +1,45 @@
-body{
-    text-align: center;
-    background: gray;
-    color:goldenrod;
+.register-container {
+    padding: 16px;
+    background-color: white;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
 }
 
-.button1{
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.registerBtn {
+    background-color: blue;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
     border: none;
-    background: gray;
-    color:blue;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.registerBtn:hover {
+    opacity: 1;
+}
+.sing-in-container {
+    background-color: #f1f1f1;
+    text-align: center;
+    height: 100px;
+}
+.sing-button{
+    margin-top: 40px;
+    border: none;
+    background-color: #f1f1f1;
+    color: dodgerblue;
     text-decoration: underline;
+    cursor: pointer;
 }

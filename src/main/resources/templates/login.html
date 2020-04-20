@@ -7,16 +7,21 @@
 </head>
 <body>
     <h1>Logging page</h1>
+    <hr>
+    <div class="login-container">
     <form th:action="@{/login}" method="post"/>
     <label for="username">Email</label>
-    <input type="text" id="username" name="username"/></br>
+    <input type="text" placeholder="Enter Email" id="username" name="username"/></br>
     <label for="password">Password</label>
-    <input type="password" id="password" name="password"/></br>
+    <input type="password"  placeholder="Enter Password" id="password" name="password"/></br>
 
-    <label for="remember-me"> remember me</label>
+    <label for="remember-me"> Remember me</label>
     <input type="checkbox" id="remember-me" name="remember-me"></br>
-    <input type="submit" value="log up"/>
+    <input  class="loginBtn" type="submit" value="Log up"/>
     </form>
-    <button type="button" class="button1" th:onclick="|window.location.href='/sing-up'|">GO TO REGISTRATION</button>
+    </div>
+    <div class="register-container">
+    <button type="button" class="register-button" th:onclick="|window.location.href='/sing-up'|">GO TO REGISTRATION</button>
+    </div>
 </body>
 </html>
