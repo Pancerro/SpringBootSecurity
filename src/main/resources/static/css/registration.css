@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    background: gray;
+    color:goldenrod;
+}
+
+.button1{
+    border: none;
+    background: gray;
+    color:blue;
+    text-decoration: underline;
+}
